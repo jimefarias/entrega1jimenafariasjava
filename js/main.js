@@ -51,7 +51,7 @@ while (destinos != "1") {
                 default:
                         alert("¡lo siento! no hay destinos disponibles ¿queres probar otro destino?");
                         break;
-        } 
+        }   
         destinos = prompt("¿a donde te gustaria viajar?"); 
 }
 
