@@ -52,7 +52,7 @@ while (destinos != "1") {
                         alert("¡lo siento! no hay destinos disponibles ¿queres probar otro destino?");
                         break;
         }
-        destinos = prompt("¿a donde te gustaria viajar?");
+        destinos = prompt("¿a donde te gustaria viajar?"); 
 }
 
 alert (nombre + ",tu destino elegido es" + destinos + "en" + fecha + ",te alojarias en un" + alojamiento + " y viajarias en" + transporte)
