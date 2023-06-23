@@ -1,12 +1,13 @@
-let bienvenida = ("Arma tu viaje en pocos pasos ¡BIENVENIDOS!");
 
-let nombre = prompt("¿cual es tu nombre?");
-if (nombre != "") {
-        alert("hola" + " " + nombre);
+function saludar(nombre) {
+        alert("Hola, " + nombre + "! Bienvenido.");
 }
-else {
-        alert("¿me dirias tu nombre?")
-}
+
+let bienvenida = "Arma tu viaje en pocos pasos ¡BIENVENIDOS!";
+alert(bienvenida);
+
+let nombre = prompt("¿Cuál es tu nombre?");
+saludar(nombre);
 
 let transporte = prompt("¿queres viajar en colectivo o avion?");
 if (transporte != " ") {
@@ -17,7 +18,7 @@ else {
 }
 
 let alojamiento = prompt("¿que alojamiento buscas?");
-if (transporte != " ") {
+if (alojamiento != " ") {
         alert("tu alojamiento elegido es" + " " + alojamiento);
 }
 else {
@@ -33,27 +34,13 @@ else {
 }
 
 
-let destinos = prompt("¿a que continente queres viajar?");
-while (destinos != "1") {
-        switch (destinos) {
-                case "america del norte":
-                        alert("excelente eleccion");
-                        break;
-                case "asia":
-                        alert("excelente eleccion");
-                        break;
-                case "america del sur":
-                        alert("excelente eleccion");
-                        break;
-                case "europa":
-                        alert("excelente eleccion");
-                        break;
-                default:
-                        alert("¡lo siento! no hay destinos disponibles ¿queres probar otro destino?");
-                        break;
-        }   
-        destinos = prompt("¿a donde te gustaria viajar?"); 
+let destinos = prompt("¿a que continente queres viajar? podes elegir entre america del norte,asia,america del sur y europa");
+
+while (destinos !== "america del norte" && destinos !== "asia" && destinos !== "america del sur" && destinos !== "europa") {
+        alert("¡Lo siento! No hay destinos disponibles. ¿Quieres probar otro destino?");
+        destinos = prompt("¿A dónde te gustaría viajar?");
 }
 
-alert (nombre + ",tu destino elegido es" + destinos + "en" + fecha + ",te alojarias en un" + alojamiento + " y viajarias en" + transporte)
+alert("Excelente elección: " + destinos);
 
+alert(nombre + ", tu destino elegido es " + destinos + " en " + fecha + ", te alojarías en un " + alojamiento + " y viajarías en " + transporte);
