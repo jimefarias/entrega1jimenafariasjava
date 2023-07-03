@@ -43,4 +43,40 @@ while (destinos !== "america del norte" && destinos !== "asia" && destinos !== "
 
 alert("Excelente elección: " + destinos);
 
+
+
+
 alert(nombre + ", tu destino elegido es " + destinos + " en " + fecha + ", te alojarías en un " + alojamiento + " y viajarías en " + transporte);
+
+
+class Viaje {
+        constructor(destino, transporte, duracion) {
+                this.destino = destinos;
+                this.transporte = transporte;
+                this.duracion = duracion;
+        }
+}
+
+
+const viaje1 = new Viaje("Corea", "avion", "36 horas");
+const viaje2 = new Viaje("Tokio", "avion", "96 dias");
+const viaje3 = new Viaje("Japon", "avion", "40 horas");
+const viaje4 = new Viaje("Francia", "avion", "25 horas");
+const viaje5 = new Viaje("Mexico", "avion", "15 horas");
+const viaje6 = new Viaje("Londres", "avion", "18horas");
+
+
+
+const viajes =[viaje1, viaje2, viaje3, viaje4, viaje5, viaje6];
+
+viajes.push ("viaje7");
+console.log (viajes)
+
+viajes.forEach(viaje => {
+        console.log("Destino:", viaje.destino);
+        console.log("Transporte:", viaje.transporte);
+        console.log("Duración:", viaje.duracion);
+        console.log("----------");
+      });
+
+
