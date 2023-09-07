@@ -3,80 +3,51 @@ function saludar(nombre) {
         alert("Hola, " + nombre + "! Bienvenido.");
 }
 
-let bienvenida = "Arma tu viaje en pocos pasos ¡BIENVENIDOS!";
-alert(bienvenida);
+
+const bienvenida = "Arma tu viaje en pocos pasos ¡BIENVENIDOS!";
+console.log(bienvenida);
 
 let nombre = prompt("¿Cuál es tu nombre?");
 saludar(nombre);
+   
 
-let transporte = prompt("¿queres viajar en colectivo o avion?");
-if (transporte != " ") {
-        alert("tu transporte  elegido es" + " " + transporte);
-}
-else {
-        alert("¿como queres viajar?");
-}
-
-let alojamiento = prompt("¿que alojamiento buscas?");
-if (alojamiento != " ") {
-        alert("tu alojamiento elegido es" + " " + alojamiento);
-}
-else {
-        alert("¿donde te queres alojar?");
-}
-
-let fecha = prompt("¿en que fecha queres viajar? indica mes y año");
-if (fecha != " ") {
-        alert("tu fecha elegida es" + " " + fecha);
-}
-else {
-        alert("¿me dirias una fecha?");
+let transporte = prompt("¿Quieres viajar en colectivo o avión?");
+if (transporte !== "") {
+        alert("Tu transporte elegido es " + transporte);
+} else {
+        transporte = input("¿Cómo quieres viajar?");
+        alert("Tu transporte elegido es " + transporte);
 }
 
 
-let destinos = prompt("¿a que continente queres viajar? podes elegir entre america del norte,asia,america del sur y europa");
+let alojamiento = prompt("¿Qué tipo de alojamiento buscas?");
+if (alojamiento !== "") {
+        alert("Tu alojamiento elegido es " + alojamiento);
+} else {
+        alojamiento = input("¿Dónde te quieres alojar?");
+        alert("Tu alojamiento elegido es " + alojamiento);
+}
+
+
+let fecha = prompt("¿En qué fecha quieres viajar? Indica mes y año");
+if (fecha !== "") {
+        alert("Tu fecha elegida es " + fecha);
+} else {
+        fecha = input("¿Me podrías indicar una fecha?");
+        alert("Tu fecha elegida es " + fecha);
+}
+
+
+let destinos = prompt("¿A qué continente quieres viajar? Puedes elegir entre América del Norte, Asia, América del Sur y Europa");
 
 while (destinos !== "america del norte" && destinos !== "asia" && destinos !== "america del sur" && destinos !== "europa") {
-        alert("¡Lo siento! No hay destinos disponibles. ¿Quieres probar otro destino?");
-        destinos = prompt("¿A dónde te gustaría viajar?");
+        console.log("¡Lo siento! No hay destinos disponibles. ¿Quieres probar otro destino?");
+        destinos = input("¿A dónde te gustaría viajar?");
 }
 
 alert("Excelente elección: " + destinos);
 
 
-
-
 alert(nombre + ", tu destino elegido es " + destinos + " en " + fecha + ", te alojarías en un " + alojamiento + " y viajarías en " + transporte);
-
-
-class Viaje {
-        constructor(destino, transporte, duracion) {
-                this.destino = destinos;
-                this.transporte = transporte;
-                this.duracion = duracion;
-        }
-}
-
-
-const viaje1 = new Viaje("Corea", "avion", "36 horas");
-const viaje2 = new Viaje("Tokio", "avion", "96 dias");
-const viaje3 = new Viaje("Japon", "avion", "40 horas");
-const viaje4 = new Viaje("Francia", "avion", "25 horas");
-const viaje5 = new Viaje("Mexico", "avion", "15 horas");
-const viaje6 = new Viaje("Londres", "avion", "18horas");
-
-
-
-const viajes =[viaje1, viaje2, viaje3, viaje4, viaje5, viaje6];
-
-viajes.push ("viaje7");
-console.log (viajes)
-
-viajes.forEach(viaje => {
-        console.log("Destino:", viaje.destino);
-        console.log("Transporte:", viaje.transporte);
-        console.log("Duración:", viaje.duracion);
-        console.log("----------");
-      });
 
 
