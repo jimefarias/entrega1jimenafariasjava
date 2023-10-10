@@ -1,0 +1,42 @@
+[
+    {
+        "id": "Mexico",
+        "titulo": "Mexico",
+        "imagen": "",
+        "categoria": {
+            "nombre": "Mexico",
+            "id": "Mexico"
+        },
+        "precio":2000
+    },
+    {
+        "id": "Corea",
+        "titulo": "Corea",
+        "imagen": "",
+        "categoria": {
+            "nombre": "Corea",
+            "id": "Corea"
+        },
+        "precio": 4000
+    },
+    {
+        "id": "Francia",
+        "titulo": "Francia",
+        "imagen": "",
+        "categoria": {
+            "nombre": "Francia",
+            "id": "Francia"
+        },
+        "precio": 3000
+    },
+    {
+        "id": "Uruguay",
+        "titulo": "Uruguay",
+        "imagen": "",
+        "categoria": {
+            "nombre": "Uruguay",
+            "id": "Uruguay"
+        },
+        "precio": 500
+    }
+]
